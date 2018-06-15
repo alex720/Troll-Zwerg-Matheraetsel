@@ -27,6 +27,9 @@
     <ClInclude Include="randomer.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

@@ -1,22 +1,6 @@
 #pragma once
 #include <vector>
 
-enum Colors {
-	yellow = 0,
-	blue,
-	lightblue,
-	darkblue,
-	gray,
-	green,
-	lightgreen,
-	darkgreen,
-	black,
-	white,
-	pink,
-	red,
-	gold,
-	silver
-};
 
 
 
