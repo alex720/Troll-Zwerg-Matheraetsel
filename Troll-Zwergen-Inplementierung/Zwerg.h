@@ -12,7 +12,7 @@ public:
 
 	int getColor();
 
-	int answer(std::vector<Zwerg> &list, std::vector<int> &lastAnswers, int &numberOfColors);
+	int answer(std::vector<Zwerg> &list, std::vector<int> &lastAnswers, int &numberOfColors,int debug);
 
 private:
 
