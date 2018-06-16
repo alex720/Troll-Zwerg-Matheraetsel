@@ -1,4 +1,4 @@
-#include "stdafx.h"
+
 #include "Zwerg.h"
 #include <iostream>
 
@@ -15,7 +15,7 @@ int Zwerg::getColor()
 int Zwerg::answer(std::vector<Zwerg> &list, std::vector<int> &lastAnswers,int &numberOfColors,int debug)
 {
 	int allNumbers = 0; // alle hüte zusammengezählt, die ich sehe
-	for (auto it = list.begin(); it != list.end(); it++) {
+	for (std::vector<Zwerg>::iterator it = list.begin(); it != list.end(); it++) {
 		allNumbers += it->getColor();
 	}
 
@@ -32,7 +32,7 @@ int Zwerg::answer(std::vector<Zwerg> &list, std::vector<int> &lastAnswers,int &n
 
 	int sumOfAnswers = 0; // summe aller antworten ohne die erste antwort
 
-	for (auto it = lastAnswers.begin() + 1; it != lastAnswers.end(); it++) {
+	for (std::vector<int>::iterator it = lastAnswers.begin() + 1; it != lastAnswers.end(); it++) {
 		sumOfAnswers += *(it);
 	}
 
